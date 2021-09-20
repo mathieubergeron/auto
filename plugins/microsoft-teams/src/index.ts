@@ -127,7 +127,7 @@ export default class MicrosoftTeamsPlugin {
 
         await this.createPost(
           auto,
-          sanitizeMarkdown(releaseNotes),
+          releaseNotes, // sanitizeMarkdown(releaseNotes),
           releaseUrl,
           agent
         );
